@@ -108,7 +108,7 @@ def olist_pipeline():
         ON_ERROR = 'CONTINUE';
         """,
 
-        statement_count=9,
+        statement_count=12,
 
         deferrable=False,
     )

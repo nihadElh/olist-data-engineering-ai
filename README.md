@@ -292,6 +292,45 @@ Together, these pages demonstrate how operational records and AI-enriched feedba
 
 ---
 
+## 📊 Project Results & Key Metrics
+
+The end-to-end pipeline successfully transformed Brazilian Olist e-commerce data into structured analytical models and AI-enriched customer insights.
+
+### 🔹 Data Processing & Engineering
+
+| Metric | Result |
+|---|---:|
+| E-commerce orders processed | **99,441** |
+| dbt models developed | **17** |
+| dbt snapshots implemented | **5** |
+| Data sources configured in dbt | **9** |
+| dbt data quality tests passed | **9 / 9 (100%)** |
+| Test failures and warnings | **0** |
+
+The dbt tests validate `not_null` and `unique` constraints on selected staging columns, ensuring data completeness and uniqueness for key fields.
+
+### 🔹 AI-Powered Customer Review Analysis
+
+Using **Python, Ollama, and the `gpt-oss:120b-cloud` LLM**, the AI layer analyzed **40,865 customer reviews** to classify sentiment, identify dissatisfaction causes, extract supporting evidence, and translate customer feedback into English.
+
+| Sentiment | Reviews | Percentage |
+|---|---:|---:|
+| 🟢 Positive | 23,815 | 58.3% |
+| 🔴 Negative | 12,935 | 31.7% |
+| 🟠 Mixed | 2,757 | 6.7% |
+| 🔵 Neutral | 1,358 | 3.3% |
+| **Total** | **40,865** | **100%** |
+
+### 🔹 Business Value
+
+- **Customer Experience:** Identified negative customer feedback and structured dissatisfaction causes for further analysis.
+- **Data Reliability:** Validated all 9 configured dbt tests without errors or warnings.
+- **Analytics Readiness:** Built dimensional and fact models to support business intelligence reporting.
+- **AI-Enriched Insights:** Converted unstructured customer reviews into structured analytical data stored in Snowflake.
+- **Decision Support:** Developed three Power BI report pages covering executive performance, sales analytics, and customer experience.
+
+> **Validation note:** The dbt data quality tests completed successfully (9/9 passed). The Airflow DAG has been configured and visualized; a complete end-to-end DAG execution has not yet been validated.
+
 ## 📁 Repository Structure
 
 ```text
@@ -336,6 +375,8 @@ Olist_project/
 ```
 
 > The tree highlights the main source files and documentation assets; generated files, local virtual environments, and credentials should not be committed.
+
+
 
 ## 🚀 Getting Started
 
