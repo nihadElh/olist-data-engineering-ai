@@ -1,0 +1,38 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Airflow
+airflow/logs/
+airflow/plugins/__pycache__/
+airflow/config/airflow.cfg
+
+# dbt
+dbt/olist_dbt/target/
+dbt/olist_dbt/logs/
+dbt/olist_dbt/dbt_packages/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local datasets and temporary files
+data/
+*.csv
+*.parquet
+*.log
+
+# Python environment files
+.python-version
+profiles.yml

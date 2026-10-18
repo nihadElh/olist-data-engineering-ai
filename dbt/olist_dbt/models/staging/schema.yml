@@ -1,0 +1,46 @@
+version: 2
+
+models:
+
+  - name: stg_geolocation
+    description: "Cleaned geolocation data from Olist."
+
+    columns:
+      - name: geolocation_zip_code_prefix
+        tests:
+          - not_null
+
+      - name: geolocation_lat
+        tests:
+          - not_null
+
+      - name: geolocation_lng
+        tests:
+          - not_null
+
+  - name: stg_products
+    description: "Cleaned product information from Olist."
+
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_category_translation
+    description: "Translation of product categories."
+
+    columns:
+      - name: product_category_name
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_sellers
+    description: "Cleaned seller information from Olist."
+
+    columns:
+      - name: seller_id
+        tests:
+          - not_null
+          - unique
