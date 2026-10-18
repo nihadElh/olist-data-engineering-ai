@@ -27,7 +27,7 @@ The solution covers the full lifecycle: **cloud object storage → secure ingest
 
 ## 🏗️ End-to-End Architecture
 
-![Olist end-to-end architecture](docs/Pipeline_Olist_ingestion_IA_et_visualisation.png)
+![Olist end-to-end architecture](docs/Pipeline.png)
 
 The architecture has five connected layers:
 
